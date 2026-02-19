@@ -13,7 +13,7 @@ const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:5000/", value)
+      .post("https://ghostpen-backend.onrender.com/", value)
       .then((res)=> {
         console.log(res);
         navigate('/');})
